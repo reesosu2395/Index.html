@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Bull | Dallas Unleashed</title>
+    <style>
+        :root {
+            --rb-blue: #000b8d;
+            --rb-red: #e21b4d;
+            --rb-yellow: #ffd300;
+            --rb-silver: #f4ebee;
+            --dark-bg: #0a0a0a;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--rb-silver);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,11,141,0.6), rgba(10,10,10,1)), 
+                        url('https://images.unsplash.com/photo-1549030383-75c13697e61e?q=80&w=2070&auto=format&fit=crop'); /* Dallas Skyline Placeholder */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: -2px;
+        }
+
+        .hero h1 span {
+            color: var(--rb-yellow);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        /* Buttons */
+        .btn {
+            background-color: var(--rb-yellow);
+            color: var(--rb-blue);
+            padding: 15px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            text-transform: uppercase;
+            transition: transform 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background-color: #fff;
+        }
+
+        /* Dallas Local Sections */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #1a1a1a;
+            border-left: 5px solid var(--rb-red);
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            color: var(--rb-yellow);
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid #333;
+            font-size: 0.8rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>Dallas <span>Unleashed</span></h1>
+        <p>From the lights of Reunion Tower to the soul of Deep Ellum. Fueling the North Texas hustle with 100% pure energy.</p>
+        <a href="#events" class="btn">Find Your Wings in DFW</a>
+    </section>
+
+    <div class="container" id="events">
+        <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 50px;">Local Energy Hub</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Deep Ellum Sound Select</h3>
+                <p>Catch the next wave of North Texas artists. We’re taking over local venues to give Dallas musicians the stage they deserve.</p>
+            </div>
+
+            <div class="card">
+                <h3>Victory Park Pitstop</h3>
+                <p>The Mavs and Stars are in full swing. Grab a cold can at the plaza and keep the momentum going through overtime.</p>
+            </div>
+
+            <div class="card">
+                <h3>DFW Skate Jam</h3>
+                <p>Annual qualifier at 4DWN Skatepark. Watch the best in Texas compete for a spot in the national finals.</p>
+            </div>
+        </div>
+    </div>
+
+    <section style="background-color: var(--rb-blue); padding: 60px 20px; text-align: center;">
+        <h2>The 2026 Texas Edition</h2>
+        <p>A crisp, bold flavor inspired by the heat of a Dallas summer. Available at all 7-Eleven locations across the Metroplex.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 PC Rees-Start Projects | Designed for the Dallas Market</p>
+        <p>Red Bull gives you wings. Drink responsibly.</p>
+    </footer>
+
+</body>
+</html>
